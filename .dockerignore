@@ -1,0 +1,13 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+.env
+.env.*
+!.env.example
+seen_slots.json
+subscribers.json
+Dockerfile
+docker-compose.yml
+README.md

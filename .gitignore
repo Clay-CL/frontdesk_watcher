@@ -1,3 +1,7 @@
 .venv
 .env
-.seen_slots.json
+seen_slots.json
+subscribers.json
+data/
+__pycache__/
+*.pyc

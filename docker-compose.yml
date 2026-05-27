@@ -1,0 +1,16 @@
+services:
+  frontdesk-watch:
+    build: .
+    image: frontdesk-watch:latest
+    container_name: frontdesk-watch
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      STATE_DIR: /app/data
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    volumes:
+      - frontdesk-state:/app/data
+
+volumes:
+  frontdesk-state:
