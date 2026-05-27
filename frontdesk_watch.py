@@ -12,6 +12,11 @@ from typing import List, Set, Tuple
 import hashlib
 import time
 
+from dotenv import load_dotenv
+
+# Load .env from CWD (no-op if missing — Docker uses compose's env_file).
+load_dotenv()
+
 log = logging.getLogger("frontdesk_watch")
 
 from bs4 import BeautifulSoup
